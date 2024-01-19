@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+#header {
+    display: flex;
+    height: 50vh;
+    width: auto;
+    background-image: url("../images/lasgana.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#recipe-info-images{
+    display: flex;
+    flex-direction: row;
+    max-height: 180px;
+}
+
+#recipe {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 10px
+   
+}
+
+#ingredients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-width: 30vw;
+}
+
+#steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-width: 30vw;
+}
+
+.images {
+    margin: 50px auto;
+    display: block;
+    width: 500px;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style-type: "- ";
+}
+
+ol {
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+    counter-reset: custom-counter;
+}
+
+ol li::before {
+    counter-increment: custom-counter;
+    content: counter(custom-counter) ") ";
+}
